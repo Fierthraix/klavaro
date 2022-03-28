@@ -1,0 +1,11 @@
+[package]
+name = "klavaro"
+version = "0.1.0"
+edition = "2021"
+description = "Print your current xkb_layout in Sway."
+license = "GPL-3.0-or-later"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+swayipc = "3.0.0"

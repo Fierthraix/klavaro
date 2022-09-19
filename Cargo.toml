@@ -7,4 +7,4 @@ license = "GPL-3.0-or-later"
 repository = "https://github.com/Fierthraix/klavaro"
 
 [dependencies]
-swayipc = "3.0.0"
+swayipc = "3.0.1"

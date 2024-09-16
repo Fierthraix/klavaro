@@ -1,10 +1,10 @@
 [package]
 name = "klavaro"
-version = "1.0.1"
+version = "1.0.2"
 edition = "2021"
 description = "Print your current xkb_layout in Sway."
 license = "GPL-3.0-or-later"
 repository = "https://github.com/Fierthraix/klavaro"
 
 [dependencies]
-swayipc = "3.0.1"
+swayipc = "3.0.2"

@@ -73,12 +73,12 @@ fn get_socket_path() -> Result<PathBuf> {
 
     for wm in ["i3", "sway"] {
         let output = Command::new(wm).arg("--get-socketpath").output();
-        if let Ok(output) = output {
-            if output.status.success() {
-                let path = String::from_utf8(output.stdout)?.trim().to_string();
-                if !path.is_empty() {
-                    return Ok(PathBuf::from(path));
-                }
+        if let Ok(output) = output
+            && output.status.success()
+        {
+            let path = String::from_utf8(output.stdout)?.trim().to_string();
+            if !path.is_empty() {
+                return Ok(PathBuf::from(path));
             }
         }
     }

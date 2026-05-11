@@ -1,4 +1,11 @@
 # klavaro
+
+[![CI](https://github.com/Fierthraix/klavaro/actions/workflows/ci.yml/badge.svg)](https://github.com/Fierthraix/klavaro/actions/workflows/ci.yml)
+[![Crates.io](https://img.shields.io/crates/v/klavaro.svg)](https://crates.io/crates/klavaro)
+[![Downloads](https://img.shields.io/crates/d/klavaro.svg)](https://crates.io/crates/klavaro)
+[![Docs.rs](https://docs.rs/klavaro/badge.svg)](https://docs.rs/klavaro)
+[![License](https://img.shields.io/crates/l/klavaro.svg)](LICENSE)
+
 Save the current keyboard layout (`xkb_active_layout`) to a file on [Sway](https://swaywm.org/). Useful with `i3status`.
 
 ```bash

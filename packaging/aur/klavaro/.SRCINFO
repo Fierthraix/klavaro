@@ -1,0 +1,19 @@
+pkgbase = klavaro
+	pkgdesc = Print your current xkb_layout in Sway
+	pkgver = 1.0.4
+	pkgrel = 1
+	url = https://github.com/Fierthraix/klavaro
+	arch = x86_64
+	arch = aarch64
+	license = GPL-3.0-or-later
+	makedepends = cargo
+	depends = gcc-libs
+	depends = glibc
+	optdepends = sway: Sway IPC socket provider
+	optdepends = i3-wm: i3 IPC socket provider
+	conflicts = klavaro-bin
+	conflicts = klavaro-git
+	source = klavaro-1.0.4.crate::https://static.crates.io/crates/klavaro/klavaro-1.0.4.crate
+	sha256sums = 772589394f7c5d9020784d1228a8ac414390eb44f465e09f471591228e8466f2
+
+pkgname = klavaro

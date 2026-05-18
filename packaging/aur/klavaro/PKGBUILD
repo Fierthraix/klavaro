@@ -1,0 +1,31 @@
+pkgname=klavaro
+pkgver=1.0.4
+pkgrel=1
+pkgdesc='Print your current xkb_layout in Sway'
+arch=('x86_64' 'aarch64')
+url='https://github.com/Fierthraix/klavaro'
+license=('GPL-3.0-or-later')
+depends=('gcc-libs' 'glibc')
+makedepends=('cargo')
+optdepends=('sway: Sway IPC socket provider' 'i3-wm: i3 IPC socket provider')
+conflicts=('klavaro-bin' 'klavaro-git')
+_cratename='klavaro'
+source=("${_cratename}-${pkgver}.crate::https://static.crates.io/crates/${_cratename}/${_cratename}-${pkgver}.crate")
+sha256sums=('772589394f7c5d9020784d1228a8ac414390eb44f465e09f471591228e8466f2')
+
+prepare() {
+  cd "${_cratename}-${pkgver}"
+  export CARGO_HOME="${srcdir}/cargo-home"
+  cargo fetch --locked
+}
+
+build() {
+  cd "${_cratename}-${pkgver}"
+  export CARGO_HOME="${srcdir}/cargo-home"
+  cargo build --release --locked --all-features
+}
+
+package() {
+  cd "${_cratename}-${pkgver}"
+  install -Dm755 "target/release/${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
+}

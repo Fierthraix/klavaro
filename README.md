@@ -22,23 +22,36 @@ USAGE:
 
 ## Installation
 
+### Cargo
+
 ```bash
 cargo install klavaro
+```
+
+### Arch Linux / AUR
+
+```bash
 yay -S klavaro
 yay -S klavaro-bin
 yay -S klavaro-git
-brew tap Fierthraix/tap
-brew install --cask klavaro
-nix run github:Fierthraix/nur-packages#klavaro
 ```
 
-```powershell
-scoop bucket add fierthraix https://github.com/Fierthraix/scoop-bucket
-scoop install klavaro
+### macOS / Homebrew
+
+```zsh
+brew install --cask Fierthraix/tap/klavaro
 ```
+
+### Nix
+
+```bash
+nix profile install github:Fierthraix/nur-packages#klavaro
+```
+
+### Release Assets
 
 ```text
-deb/rpm/apk/tar/zip: https://github.com/Fierthraix/klavaro/releases
+https://github.com/Fierthraix/klavaro/releases/latest
 ```
 
 ## i3status

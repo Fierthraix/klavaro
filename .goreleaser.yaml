@@ -11,7 +11,6 @@ builds:
       - aarch64-unknown-linux-gnu
       - x86_64-apple-darwin
       - aarch64-apple-darwin
-      - x86_64-pc-windows-gnu
     flags:
       - --release
       - --locked
@@ -52,18 +51,6 @@ homebrew_casks:
     license: GPL-3.0-or-later
     binaries:
       - klavaro
-scoops:
-  - name: klavaro
-    ids:
-      - archives
-    repository:
-      owner: Fierthraix
-      name: scoop-bucket
-      token: "{{ .Env.RELEASE_PUBLISH_TOKEN }}"
-    directory: bucket
-    homepage: https://github.com/Fierthraix/klavaro
-    description: Print your current xkb_layout in Sway.
-    license: GPL-3.0-or-later
 
 nix:
   - name: klavaro

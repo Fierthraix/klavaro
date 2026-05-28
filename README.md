@@ -6,7 +6,6 @@
 [![Downloads](https://img.shields.io/crates/d/klavaro.svg)](https://crates.io/crates/klavaro)
 [![Docs.rs](https://docs.rs/klavaro/badge.svg)](https://docs.rs/klavaro)
 [![License](https://img.shields.io/crates/l/klavaro.svg)](LICENSE)
-[![AUR](https://img.shields.io/aur/version/klavaro)](https://aur.archlinux.org/packages/klavaro)
 [![AUR bin](https://img.shields.io/aur/version/klavaro-bin)](https://aur.archlinux.org/packages/klavaro-bin)
 [![AUR git](https://img.shields.io/aur/version/klavaro-git)](https://aur.archlinux.org/packages/klavaro-git)
 
@@ -31,7 +30,6 @@ cargo install klavaro
 ### Arch Linux / AUR
 
 ```bash
-yay -S klavaro
 yay -S klavaro-bin
 yay -S klavaro-git
 ```

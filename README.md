@@ -1,10 +1,14 @@
 # klavaro
 
 [![CI](https://github.com/Fierthraix/klavaro/actions/workflows/ci.yml/badge.svg)](https://github.com/Fierthraix/klavaro/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/Fierthraix/klavaro?display_name=tag)](https://github.com/Fierthraix/klavaro/releases)
 [![Crates.io](https://img.shields.io/crates/v/klavaro.svg)](https://crates.io/crates/klavaro)
 [![Downloads](https://img.shields.io/crates/d/klavaro.svg)](https://crates.io/crates/klavaro)
 [![Docs.rs](https://docs.rs/klavaro/badge.svg)](https://docs.rs/klavaro)
 [![License](https://img.shields.io/crates/l/klavaro.svg)](LICENSE)
+[![AUR](https://img.shields.io/aur/version/klavaro)](https://aur.archlinux.org/packages/klavaro)
+[![AUR bin](https://img.shields.io/aur/version/klavaro-bin)](https://aur.archlinux.org/packages/klavaro-bin)
+[![AUR git](https://img.shields.io/aur/version/klavaro-git)](https://aur.archlinux.org/packages/klavaro-git)
 
 Save the current keyboard layout (`xkb_active_layout`) to a file on [Sway](https://swaywm.org/). Useful with `i3status`.
 
@@ -16,16 +20,25 @@ USAGE:
     klavaro [OUTPUT_FILE]
 ```
 
-## Instalation
-### Local
-Install to `$HOME/.cargo/bin/klavaro`
-```
-cargo install klavaro
-```
-### Global
-Install to `/usr/local/bin/klavaro`
+## Installation
+
 ```bash
-sudo -E cargo install --root /usr/local klavaro
+cargo install klavaro
+yay -S klavaro
+yay -S klavaro-bin
+yay -S klavaro-git
+brew tap Fierthraix/tap
+brew install --cask klavaro
+nix run github:Fierthraix/nur-packages#klavaro
+```
+
+```powershell
+scoop bucket add fierthraix https://github.com/Fierthraix/scoop-bucket
+scoop install klavaro
+```
+
+```text
+deb/rpm/apk/tar/zip: https://github.com/Fierthraix/klavaro/releases
 ```
 
 ## i3status
